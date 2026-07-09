@@ -12,7 +12,8 @@ export default function App() {
     
     setLoading(true)
     try {
-      const res = await fetch('http://localhost:3001/api/analyze', {
+      const res = await fetch('/api/analyze', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ videoUrl: url })
